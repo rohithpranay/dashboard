@@ -6,7 +6,8 @@ import { links } from "../data/dummy";
 import { useGlobalContext } from "../contexts/ContextProvider";
 
 function Sidebar() {
-  const { activeMenu, setActiveMenu, screenSize } = useGlobalContext();
+  const { activeMenu, setActiveMenu, screenSize, currentColor } =
+    useGlobalContext();
 
   const handleCloseSidebar = () => {
     if (activeMenu && screenSize <= 900) {
@@ -26,7 +27,6 @@ function Sidebar() {
           <div className="flex justify-between items-center">
             <Link
               to="/"
-              onClick={handleCloseSidebar}
               className="items-center gap-3 ml-3 mt-4 flex text-xl font-extrabold tracking-tight dark:text-white text-slate-900"
             >
               <SiShopware /> <span>Shoppy</span>
@@ -49,6 +49,9 @@ function Sidebar() {
                     to={`/${link.name}`}
                     key={link.name}
                     onClick={handleCloseSidebar}
+                    style={({ isActive }) => ({
+                      backgroundColor: isActive ? currentColor : "",
+                    })}
                     className={({ isActive }) =>
                       isActive ? activeLink : normalLink
                     }
