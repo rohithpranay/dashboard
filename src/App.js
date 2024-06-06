@@ -5,15 +5,9 @@ import {
   Orders,
   Calendar,
   Employees,
-  Stacked,
-  Pyramid,
   Customers,
   Area,
   Line,
-  Bar,
-  Pie,
-  Financial,
-  ColorMapping,
   Editor,
 } from "./pages";
 import "./App.css";

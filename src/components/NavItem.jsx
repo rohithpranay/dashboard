@@ -1,4 +1,3 @@
-import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 import React from "react";
 
 function NavItem({ title, customFunc, icon, color, dotColor }) {

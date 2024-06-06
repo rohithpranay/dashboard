@@ -12,7 +12,6 @@ import { useEffect } from "react";
 
 function Navbar() {
   const {
-    activeMenu,
     setActiveMenu,
     isClicked,
     handleClick,
@@ -75,7 +74,7 @@ function Navbar() {
           <img src={avatar} alt="profile" className="rounded-full w-8 h-8" />
           <p>
             <span className="text-gray-400 text-14">Hi,</span>{" "}
-            <span className="text-gray-400 text-14 font-bold ml-1 text-14">
+            <span className="text-gray-400 text-14 font-bold ml-1 ">
               Michael
             </span>
           </p>

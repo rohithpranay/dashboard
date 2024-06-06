@@ -1,7 +1,7 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import { FiSettings } from "react-icons/fi";
-import { Navbar, Footer, Sidebar, ThemeSettings } from "./components";
+import { Navbar, Sidebar, ThemeSettings } from "./components";
 import { useGlobalContext } from "./contexts/ContextProvider";
 
 const AppLayout = () => {
