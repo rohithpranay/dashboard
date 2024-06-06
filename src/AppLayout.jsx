@@ -47,7 +47,6 @@ const AppLayout = () => {
           <div className="p-4">
             <Outlet />
           </div>
-          <Footer />
         </div>
       </div>
     </div>
