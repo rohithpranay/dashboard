@@ -3,32 +3,30 @@ import {
   AiOutlineCalendar,
   AiOutlineShoppingCart,
   AiOutlineAreaChart,
-  AiOutlineBarChart,
+
   AiOutlineStock,
 } from "react-icons/ai";
 import {
-
   FiEdit,
-  FiPieChart,
+
   FiBarChart,
   FiCreditCard,
   FiStar,
   FiShoppingCart,
 } from "react-icons/fi";
 import {
-  
-  BsBarChart,
+
   BsBoxSeam,
   BsCurrencyDollar,
   BsShield,
   BsChatLeft,
 } from "react-icons/bs";
 import { IoMdContacts } from "react-icons/io";
-import { RiContactsLine, RiStockLine } from "react-icons/ri";
+import { RiContactsLine } from "react-icons/ri";
 import { MdOutlineSupervisorAccount } from "react-icons/md";
 import { HiOutlineRefresh } from "react-icons/hi";
 import { TiTick } from "react-icons/ti";
-import { GiLouvrePyramid } from "react-icons/gi";
+
 import { GrLocation } from "react-icons/gr";
 import avatar from "./avatar.jpg";
 import avatar2 from "./avatar2.jpg";
@@ -41,7 +39,6 @@ import product4 from "./product4.jpg";
 import product5 from "./product5.jpg";
 import product6 from "./product6.jpg";
 import product7 from "./product7.jpg";
-
 
 export const gridOrderImage = (props) => (
   <div>
@@ -550,31 +547,6 @@ export const links = [
       {
         name: "area",
         icon: <AiOutlineAreaChart />,
-      },
-
-      {
-        name: "bar",
-        icon: <AiOutlineBarChart />,
-      },
-      {
-        name: "pie",
-        icon: <FiPieChart />,
-      },
-      {
-        name: "financial",
-        icon: <RiStockLine />,
-      },
-      {
-        name: "color-mapping",
-        icon: <BsBarChart />,
-      },
-      {
-        name: "pyramid",
-        icon: <GiLouvrePyramid />,
-      },
-      {
-        name: "stacked",
-        icon: <AiOutlineBarChart />,
       },
     ],
   },
